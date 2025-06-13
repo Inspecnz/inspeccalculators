@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Your Checklist</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 40px;
+      max-width: 600px;
+      margin: auto;
+      color: #122d42;
+    }
+    h1 {
+      color: #bf1922;
+    }
+    label, input {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="email"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #122d42;
+      color: white;
+      border: none;
+      padding: 12px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://inspec.co.nz/hs-fs/hubfs/Color%20logo%20-%20no%20background.png" alt="INSPEC Logo" style="max-width: 180px; margin-bottom: 30px;">
+  <h1>Get Your Free Renovation Checklist</h1>
+  <p>Enter your details below to access the downloadable PDF checklist.</p>
+
+  <form name="lead-download" method="POST" data-netlify="true" action="/success.html">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+
+    <button type="submit">Download Now</button>
+  </form>
+</body>
+</html>
